@@ -4,7 +4,7 @@ Una plantilla base lista para producción orientada a la creación de APIs REST 
 
 ##  Tecnologías
 
-* **Java** (Ingresa tu versión, ej. 17 o 21)
+* **Java**  (17)
 * **Spring Boot** 3.x
 * **Spring Security**
 * **JSON Web Tokens (JWT)**
