@@ -1,0 +1,19 @@
+# Ignorar la carpeta de compilación de Maven (AQUÍ ESTÁ LA MAGIA)
+target/
+
+# Ignorar archivos compilados sueltos
+*.class
+
+# Ignorar el archivo de variables de entorno locales (si lo llegas a usar)
+.env
+application-local.properties
+
+# Ignorar configuraciones de los IDEs (VS Code, IntelliJ, Eclipse)
+.vscode/
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# Ignorar
