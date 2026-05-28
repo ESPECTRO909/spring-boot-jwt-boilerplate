@@ -4,9 +4,9 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.sinue.auth.dto.PasswordChangeDTO;
-import com.sinue.auth.dto.UsuarioResponseDTO;
-import com.sinue.auth.dto.UsuarioUpdateDTO;
+import com.sinue.auth.dto.requets.PasswordChangeDTO;
+import com.sinue.auth.dto.requets.UsuarioUpdateDTO;
+import com.sinue.auth.dto.response.UsuarioResponseDTO;
 import com.sinue.auth.mapper.UsuarioMapper;
 import com.sinue.auth.model.Usuario;
 import com.sinue.auth.repository.UsuarioRepository;

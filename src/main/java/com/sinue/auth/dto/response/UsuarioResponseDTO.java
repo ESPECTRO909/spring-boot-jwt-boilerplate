@@ -1,4 +1,4 @@
-package com.sinue.auth.dto;
+package com.sinue.auth.dto.response;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -11,7 +11,6 @@ public class UsuarioResponseDTO {
     private String username;
     private String nombre;
     private String correo;
-    private String matricula;
     private LocalDate fechaNacimiento;
     private RoleUsuario rol;
     private LocalDateTime creadoEn;
@@ -38,12 +37,6 @@ public class UsuarioResponseDTO {
 
     public void setCorreo(String correo) { 
         this.correo = correo; }
-
-    public String getMatricula() {
-        return matricula; }
-
-    public void setMatricula(String matricula) {
-        this.matricula = matricula; }
 
     public LocalDate getFechaNacimiento() {
         return fechaNacimiento; }

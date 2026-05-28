@@ -6,7 +6,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.stereotype.Service;
 
-import com.sinue.auth.dto.AuthRequestDTO;
+import com.sinue.auth.dto.requets.AuthRequestDTO;
 import com.sinue.auth.model.Usuario;
 import com.sinue.auth.model.enums.RoleUsuario;
 import com.sinue.auth.repository.UsuarioRepository;
@@ -36,17 +36,11 @@ public class AuthService {
         if (usuarioRepository.existsByUsername(request.getUsername())) {// si el usuario ya existe, no se puede registrar
             return "El nombre de usuario ya existe";
         }
-
-        else if (usuarioRepository.existsByMatricula(request.getMatricula())) {// si la matricula ya existe, no se puede registrar
-            return "La matrícula ya existe";
-        }
-
-
+        
         Usuario user = new Usuario();
         user.setUsername(request.getUsername());
         user.setNombre(request.getNombre());
         user.setCorreo(request.getCorreo());
-        user.setMatricula(request.getMatricula());  
         user.setFechaNacimiento(request.getFechaNacimiento());
         user.setCreadoEn(java.time.LocalDateTime.now()); // fecha de registro automática
         user.setPassword(passwordEncoder.encode(request.getPassword())); // hash

@@ -1,4 +1,4 @@
-package com.sinue.auth.dto;
+package com.sinue.auth.dto.response;
 public class AuthResponseDTO {
     private String token;
 

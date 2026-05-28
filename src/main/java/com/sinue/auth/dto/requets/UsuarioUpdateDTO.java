@@ -1,7 +1,7 @@
-package com.sinue.auth.dto;
+package com.sinue.auth.dto.requets;
 
 public class UsuarioUpdateDTO {
-
+    
     private String nombre;
     private String correo;
 

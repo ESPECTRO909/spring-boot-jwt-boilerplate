@@ -20,19 +20,14 @@ public class Usuario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)// Auto-incremental ID
     private long id;
 
-    private String folio;
     private String nombre;
 
     @Column(name = "username", unique = true, nullable = false)
     private String username;
-    private int edad;
 
     @Column(name = "fecha_nacimiento")
     private LocalDate fechaNacimiento;
 
-    @Column(name = "matricula", unique = true, nullable = false)
-    private String matricula;
-    
     private String correo;
 
     @Column(name = "password", nullable = false)
@@ -40,38 +35,27 @@ public class Usuario {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "rol", nullable = false)
-    private RoleUsuario rol;// Enum para definir el rol del usuario (ADMIN, DENUNCIANTE, FUNCIONARIO)
+    private RoleUsuario rol;
 
     // Fecha en que se registró el usuario — se asigna automáticamente al crear
     @Column(name = "creado_en", updatable = false)
     private LocalDateTime creadoEn;
 
-    private double puntosAcumulados; // Para el sistema de puntos
-
     public Usuario(){}
 
-    public Usuario(long id, String folio,String nombre, String username, int edad, LocalDate fechaNacimiento, String matricula, String correo, String password, RoleUsuario rol, double puntosAcumulados) {
+    public Usuario(long id, String nombre, String username, LocalDate fechaNacimiento, String correo, String password, RoleUsuario rol) {
         this.id = id;
-        this.folio = folio;
         this.nombre = nombre;
         this.username = username;
-        this.edad = edad;
         this.fechaNacimiento = fechaNacimiento;
-        this.matricula = matricula;
         this.correo = correo;
         this.password = password;
         this.rol = rol;
-        this.puntosAcumulados = puntosAcumulados;
     }
 
     // Getters y Setters
     public long getId(){
         return id;
-    }
-
-    public String getFolio()
-    {
-        return folio;
     }
 
     public String getNombre(){
@@ -82,16 +66,8 @@ public class Usuario {
         return username;
     }
 
-    public int getEdad() {
-        return edad;
-    }
-
     public LocalDate getFechaNacimiento() {
         return fechaNacimiento;
-    }
-    
-    public String getMatricula(){
-        return matricula;
     }
 
     public String getCorreo(){
@@ -110,10 +86,6 @@ public class Usuario {
         return creadoEn;
     }
 
-    public double getPuntosAcumulados() {
-        return puntosAcumulados;
-    }
-
     // Setters
 
     public void setCreadoEn(LocalDateTime creadoEn) {
@@ -124,10 +96,6 @@ public class Usuario {
         this.id = id;
     }
 
-    public void setFolio(String folio){
-        this.folio = folio;
-    }
-
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
@@ -135,16 +103,8 @@ public class Usuario {
         this.username = username;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
     public void setFechaNacimiento(LocalDate fechaNacimiento) {
         this.fechaNacimiento = fechaNacimiento;
-    }
-
-    public void setMatricula(String matricula){
-        this.matricula = matricula;
     }
 
     public void setCorreo(String correo){
@@ -157,9 +117,5 @@ public class Usuario {
 
     public void setRol(RoleUsuario rol){
         this.rol = rol;
-    }
-
-    public void setPuntosAcumulados(double puntosAcumulados) {
-        this.puntosAcumulados = puntosAcumulados;
     }
 }

@@ -1,10 +1,10 @@
-# Ignorar la carpeta de compilación de Maven (AQUÍ ESTÁ LA MAGIA)
+# Ignorar la carpeta de compilación de Maven
 target/
 
 # Ignorar archivos compilados sueltos
 *.class
 
-# Ignorar el archivo de variables de entorno locales (si lo llegas a usar)
+# Ignorar el archivo de variables de entorno locales
 .env
 application-local.properties
 

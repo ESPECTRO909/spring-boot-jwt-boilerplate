@@ -6,8 +6,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.sinue.auth.dto.AuthRequestDTO;
-import com.sinue.auth.dto.AuthResponseDTO;
+import com.sinue.auth.dto.requets.AuthRequestDTO;
+import com.sinue.auth.dto.response.AuthResponseDTO;
 import com.sinue.auth.service.AuthService;
 
 @RestController

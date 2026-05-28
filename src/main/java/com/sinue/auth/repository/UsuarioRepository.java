@@ -13,14 +13,11 @@ import org.springframework.data.domain.Pageable;
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
     Optional<Usuario> findFirstByUsername(String username);
 
-    Optional<Usuario> findFirstByMatricula(String matricula);
-
     Optional<Usuario>findByFechaNacimiento(LocalDate fechaNacimiento);
 
     Optional<Usuario> findByCorreo(String correo);
 
     boolean existsByUsername(String username);
-    boolean existsByMatricula(String matricula);
 
     Page<Usuario> findAll(Pageable pageable);
 

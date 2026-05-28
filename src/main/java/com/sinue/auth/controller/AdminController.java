@@ -1,10 +1,9 @@
 package com.sinue.auth.controller;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
-import com.sinue.auth.dto.UsuarioResponseDTO;
+import com.sinue.auth.dto.response.UsuarioResponseDTO;
 import com.sinue.auth.model.enums.RoleUsuario;
 import com.sinue.auth.service.*;
 

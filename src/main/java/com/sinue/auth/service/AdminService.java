@@ -3,7 +3,7 @@ package com.sinue.auth.service;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.sinue.auth.dto.UsuarioResponseDTO;
+import com.sinue.auth.dto.response.UsuarioResponseDTO;
 import com.sinue.auth.mapper.UsuarioMapper;
 import com.sinue.auth.model.Usuario;
 import com.sinue.auth.model.enums.RoleUsuario;

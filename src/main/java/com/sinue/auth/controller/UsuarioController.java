@@ -6,9 +6,9 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.*;
 
-import com.sinue.auth.dto.PasswordChangeDTO;
-import com.sinue.auth.dto.UsuarioResponseDTO;
-import com.sinue.auth.dto.UsuarioUpdateDTO;
+import com.sinue.auth.dto.requets.PasswordChangeDTO;
+import com.sinue.auth.dto.requets.UsuarioUpdateDTO;
+import com.sinue.auth.dto.response.UsuarioResponseDTO;
 import com.sinue.auth.service.UsuarioService;
 
 import java.util.Map;

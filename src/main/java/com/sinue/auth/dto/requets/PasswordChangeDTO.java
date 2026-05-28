@@ -1,5 +1,4 @@
-package com.sinue.auth.dto;
-
+package com.sinue.auth.dto.requets;
 public class PasswordChangeDTO {
 
     private String passwordActual;
