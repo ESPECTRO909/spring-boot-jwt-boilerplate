@@ -9,7 +9,7 @@ Una plantilla base lista para producción orientada a la creación de APIs REST 
 * **Spring Security**
 * **JSON Web Tokens (JWT)**
 * **Spring Data JPA / Hibernate**
-* **MySQL / PostgreSQL** (Ajusta según lo que uses)
+* **MySQL / PostgreSQL** 
 
 ##  Características principales
 
